@@ -60,6 +60,22 @@ Hero.prototype = {
 let hero1 = new Hero("Michael Angelo", "Ninja");
 console.log(hero1.whoAreYou());
 
+//Exercise 1 - Day 1 
+let person = window.prompt("Please enter your name", "Harry Potter");
+let isSoccerFan = window.confirm("Do you love soccer?");
+if (person != null) {
+  let par = document.createElement("p");
+  let msg = person + "!";
+  if (isSoccerFan) {
+    msg += " You love soccer! That is awesome!";
+  } else {
+    msg += " You do not like soccer! No problem, that's fine!";
+  }
+  let text = document.createTextNode(msg);
+  par.appendChild(text);
+  document.body.appendChild(par);
+}
+
 //Exercise 2 - Day 1 
 //Write a JS for loop that will iterate from 0 to 15......
 for (let i = 0; i <= 15; i++) {
@@ -119,6 +135,7 @@ library.sort((a, b) => b.libraryID - a.libraryID)
 
 console.log(library)
 
+// output
 // [
 //     { title: 'Walter Isaacson', author: 'Steve Jobs', libraryID: 4264 },
 //     {
@@ -128,6 +145,9 @@ console.log(library)
 //     },
 //     { title: 'The Road Ahead', author: 'Bill Gates', libraryID: 1254 }
 //  ]
+
+
+
 
 
     
